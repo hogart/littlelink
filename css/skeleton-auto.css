@@ -263,9 +263,14 @@ ol {
     margin-bottom: 0.5rem;
   }
 
+  .newsletter-example {
+    font-size: 80%;
+    margin-bottom: 0;
+  }
+
   #subscribe-form {
     background-color: hsla(0, 0%, 100%, 0.2);
-    padding: 8px 0 0 0;
+    padding: 8px 0 4px 0;
     border-radius: 8px;
 
     .form-container {
@@ -306,51 +311,6 @@ ol {
       font-family: Raleway, sans-serif;
       font-weight: 700;
       border-radius: 8px;
-    }
-  }
-
-  #mc_embed_shell {
-    .mc-field-group {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.1rem;
-    }
-
-    img.refferal_badge {
-      filter: invert(1);
-    }
-
-    input {
-      width: var(--button-width);
-      padding: 14px 12px 12px 12px;
-      outline: none;
-      border-radius: 8px;
-      border: 1px solid var(--link-color);
-      box-sizing: content-box;
-      margin-bottom: 0.8rem;
-
-      &:user-invalid {
-        border-color: #682a2a;
-      }
-    }
-
-    .asterisk {
-      opacity: 0.6;
-      &::before {
-        content: '(';
-      }
-      &::after {
-        content: ')';
-      }
-    }
-
-    &:has(:user-invalid) {
-      input[type="submit"] {
-        opacity: 0.6;
-        cursor: not-allowed;
-        pointer-events: none;
-      }
     }
   }
 
