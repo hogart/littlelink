@@ -320,7 +320,7 @@ ol {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 
     a {
       display: inline-block;
@@ -344,9 +344,15 @@ ol {
     }
   }
 
-  .cc-window {
-    box-shadow: 0 0px 0.5rem color-mix(in srgb, currentColor 60%, transparent);
+  .cc-revoke, .cc-window {
+    box-shadow: 0 0px 0.5rem color-mix(in srgb, currentColor 80%, transparent);
     backdrop-filter: blur(1px);
+    padding: 0.6rem !important;
+    font-family: inherit;
+  }
+
+  .cc-revoke {
+    color: var(--link-color) !important;
   }
 }
 
