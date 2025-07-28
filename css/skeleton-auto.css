@@ -253,6 +253,10 @@ ol {
 }
 
 .hogart-the-rogue {
+  h2 {
+    margin-top: 0;
+  }
+
   button {
     background-color: transparent;
     box-sizing: content-box;
@@ -315,31 +319,42 @@ ol {
   }
 
   footer {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 1.5rem;
+    gap: 0.5rem;
+    
+    p {
+      font-size: small;
+      margin-bottom: 2rem;
+    }
 
-    a {
-      display: inline-block;
-      width: 1.5rem;
-      height: 1.5rem;
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
 
-      &:focus {
-        outline: 2px solid var(--link-color);
-        outline-offset: 2px;
-      }
-
-      svg {
-        height: 1.5rem;
+      a {
+        display: inline-block;
         width: 1.5rem;
-        fill: currentColor;
-      }
+        height: 1.5rem;
 
-      &[href=""] {
-        display: none;
+        &:focus {
+          outline: 2px solid var(--link-color);
+          outline-offset: 2px;
+        }
+
+        svg {
+          height: 1.5rem;
+          width: 1.5rem;
+          fill: currentColor;
+        }
+
+        &[href=""] {
+          display: none;
+        }
       }
     }
   }
