@@ -265,6 +265,14 @@ ol {
   .free-adventure {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 150%;
+    font-style: italic;
+
+    strong {
+      color: #7d3637;
+      font-weight: 500;
+    }
   }
 
   .newsletter-example {
